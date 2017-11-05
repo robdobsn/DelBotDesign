@@ -21,7 +21,7 @@
 camPos = true; //if true force camera position according request in dataset
 
 //dimensions are in mm.
-Delta_name = "Simulator example";
+Delta_name = "DelBot XL";
 //-- Frame data ----------------------------------------------
 beam_int_radius = 190; // radius inside the rectangular columns - used as reference radius
  // if columns are replaced with rods this is the radius of the rod axis plane. 

@@ -1,0 +1,842 @@
+<vismat>
+<Asset url="/Carbon_Fiber/bump_tex/TexBitmap/buffer/BitmapBuffer" type="bitmap" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="bitmap" name="BitmapBuffer">
+      <parameters>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="color_space" label="Color Space">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="frame_sequence" label="Frame Sequence">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="maya_compatible" label="Maya Compatible">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="frame_offset" label="Frame Offset">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="list" name="psd_alpha_name" label="psd_alpha_name">
+          <value>
+            <list/>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="filter_type" label="Filter Type">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="filter_blur" label="Filter Blur">
+          <value>0.150000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="list" name="psd_group_name" label="psd_group_name">
+          <value>
+            <list/>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="FileBrowserHandler" type="string" name="file" label="File">
+          <value>C:/Documents and Settings/Emil/Desktop/vismat_material_collection/Misc/Skin_Bump.jpg</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="allow_negative_colors" label="Allow negative colors">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="use_data_window" label="use_data_window">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="frame_number" label="Frame Number">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="gamma" label="Gamma">
+          <value>1.000000</value>
+        </parameter>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/bump_tex/TexBitmap/uvwgen/UVWGenChannel" type="uvw" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="uvw" name="UVWGenChannel">
+      <parameters>
+        <parameter listType="none" handler="TextureTransformHandler" type="componentTransform" name="uvw_transform" label="uvw_transform">
+          <value>
+            <componentTransform>
+              <x_rotation>0.000000</x_rotation>
+              <y_rotation>0.000000</y_rotation>
+              <z_rotation>0.000000</z_rotation>
+              <x_scale>1.000000</x_scale>
+              <y_scale>1.000000</y_scale>
+              <z_scale>1.000000</z_scale>
+              <x_mirror>0</x_mirror>
+              <y_mirror>0</y_mirror>
+              <z_mirror>0</z_mirror>
+              <x_offset>0.000000</x_offset>
+              <y_offset>0.000000</y_offset>
+              <z_offset>0.000000</z_offset>
+            </componentTransform>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="crop_u" label="crop_u">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output vector texture" name="uvw_coords" label="uvw_coords"/>
+        <parameter listType="none" handler="default" type="bool" name="use_double_sided_mode" label="Enable double-sided mode">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_mode" label="wrap_mode">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="plugin" name="uvwgen" label="uvwgen">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_u" label="wrap_u">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_w" label="wrap_w">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_v" label="wrap_v">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="crop_w" label="crop_w">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="uvw_channel" label="Channel">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="vector" name="coverage" label="coverage">
+          <value>
+            <x>1.000000</x>
+            <y>1.000000</y>
+            <z>1.000000</z>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="crop_v" label="crop_v">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="transform" name="tex_transform" label="tex_transform">
+          <value>
+            <vector>
+              <x>1.000000</x>
+              <y>0.000000</y>
+              <z>0.000000</z>
+            </vector>
+            <vector>
+              <x>0.000000</x>
+              <y>1.000000</y>
+              <z>0.000000</z>
+            </vector>
+            <vector>
+              <x>0.000000</x>
+              <y>0.000000</y>
+              <z>1.000000</z>
+            </vector>
+            <vector>
+              <x>0.000000</x>
+              <y>0.000000</y>
+              <z>0.000000</z>
+            </vector>
+          </value>
+        </parameter>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/bump_tex/TexBitmap" type="texture" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="texture" name="TexBitmap">
+      <parameters>
+        <parameter listType="none" handler="default" type="float" name="uv_noise_amount" label="Amount">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="jitter" label="Jitter">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="invert_alpha" label="Invert Alpha">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output acolor texture" name="color" label="Color"/>
+        <parameter listType="none" handler="None" type="plugin" name="bitmap" label="Bitmap">
+          <value>/Carbon_Fiber/bump_tex/TexBitmap/buffer/BitmapBuffer</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="alpha_from_intensity" label="Alpha From Intensity">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="compatibility_with" label="compatibility with">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="invert" label="Invert">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="plugin" name="uvwgen" label="uvwgen">
+          <value>/Carbon_Fiber/bump_tex/TexBitmap/uvwgen/UVWGenChannel</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output float texture" name="out_alpha" label="out_alpha"/>
+        <parameter listType="none" handler="default" type="bool" name="tile" label="Tile">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="uv_noise_size" label="Size">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="CheckBoxHandler" type="integer" name="uv_noise_on" label="On">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="nouvw_color" label="No UVW Color"/>
+        <parameter listType="none" handler="DoubleSpinBoxHandler" type="float texture" name="alpha_offset" label="Alpha Offset">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="un_noise_phase" label="Phase">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="uv_noise_levels" label="Levels">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output acolor texture" name="out_transparency" label="out_transparency"/>
+        <parameter listType="none" handler="DoubleSpinBoxHandler" type="float texture" name="alpha_mult" label="Alpha Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="h" label="Height">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="placement_type" label="Placement Type">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="tile_v" label="Tile V">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="tile_u" label="Tile U">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="u" label="U">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="w" label="Width">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="v" label="V">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="color_mult" label="Color Multiplier"/>
+        <parameter listType="none" handler="CheckBoxHandler" type="integer" name="uv_noise_animate" label="Animate">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output float texture" name="out_intensity" label="out_intensity"/>
+        <parameter listType="none" handler="default" type="acolor texture" name="color_offset" label="Color Offset"/>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/Reflection/transparency_texture/TexFresnel" type="texture" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="texture" name="TexFresnel">
+      <parameters>
+        <parameter listType="none" handler="default" type="acolor texture" name="black_color_tex" label="Perpendicular Texture"/>
+        <parameter listType="none" handler="default" type="acolor" name="black_color" label="Perpendicular">
+          <value>
+            <r>0.768627</r>
+            <g>0.694118</g>
+            <b>0.490196</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="use_multiplier_as_exponent" label="Multiplier as exponent">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float texture" name="refract_ior_tex" label="Refract IOR Texture"/>
+        <parameter listType="none" handler="default" type="bool" name="invert" label="invert">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="refract_ior" label="Refract IOR">
+          <value>1.550000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="fresnel_ior" label="IOR">
+          <value>2.500000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="black_color_tex_mult" label="Perpendicular Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="refract_ior_tex_mult" label="Refract IOR Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="white_color_tex" label="Parallel Texture"/>
+        <parameter listType="none" handler="default" type="float texture" name="fresnel_ior_tex" label="IOR Texture"/>
+        <parameter listType="none" handler="default" type="float" name="white_color_tex_mult" label="Parallel Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor" name="white_color" label="Parallel">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="fresnel_ior_tex_mult" label="IOR Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/Reflection" type="BRDF" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="BRDF" name="BRDFReflection">
+      <parameters>
+        <parameter listType="none" handler="default" type="float" name="soften_edge" label="Soften">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="None" type="float" name="cutoff" label="cutoff">
+          <value>0.001000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float texture" name="hilightGlossiness_tex" label="Texture"/>
+        <parameter gammaCorrect="1" name="color" label="Filter" handler="default" listType="none" type="color">
+          <value>
+            <r>1.000000</r>
+            <g>1.000000</g>
+            <b>1.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="shaderType" label="Shader Type">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float texture" name="anisotropy_tex" label="Anisotropy Texture"/>
+        <parameter listType="none" handler="default" type="plugin" name="anisotropy_uvwgen" label="anisotropy_uvwgen">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="subdivs" label="Subdivs">
+          <value>22</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="transparency_tex" label="Texture">
+          <value>/Carbon_Fiber/Reflection/transparency_texture/TexFresnel</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="imap_samples" label="Samples">
+          <value>20</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="reflect_dim_distance_falloff" label="Dim Falloff">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="DoubleSpinBoxHandler" type="float texture" name="anisotropy_rotation" label="Rotation">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="None" type="bool" name="trace_reflections" label="trace_reflections">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="glossyAsGI" label="Treat glossy as GI">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="None" type="integer" name="trace_depth" label="Trace depth">
+          <value>-1</value>
+        </parameter>
+        <parameter listType="none" handler="None" type="bool" name="back_side" label="back_side">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="affect_alpha" label="Affect alpha">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="reflect_exit_color" label="Exit color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="color_tex_mult" label="color_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="hilightGlossiness" label="Hilight">
+          <value>0.750000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="reflectionGlossiness_tex_mult" label="Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="anisotropy_use_map_channel" label="Use Map Channel">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="imap_max_rate" label="Max rate">
+          <value>-1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="imap_norm_thresh" label="Nrm Thresh">
+          <value>0.400000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="anisotropy_rotation_tex_mult" label="Rotation Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="reflectionGlossiness" label="Refl.">
+          <value>0.750000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="hilightGlossiness_tex_mult" label="Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="reflect_dim_distance_on" label="On">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="anisotropy_tex_mult" label="Anisotropy Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="interpolation_on" label="Interpolation">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="transparency_tex_mult" label="Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="reflect_dim_distance" label="Distance">
+          <value>100.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="imap_min_rate" label="Min rate">
+          <value>-1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="imap_color_thresh" label="Clr Thresh">
+          <value>0.250000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="anisotropy_map_channel" label="Map Channel">
+          <value>1</value>
+        </parameter>
+        <parameter gammaCorrect="1" name="color_tex" label="color_tex" handler="default" listType="none" type="acolor texture"/>
+        <parameter listType="none" handler="DoubleSpinBoxHandler" type="float texture" name="anisotropy" label="Anisotropy">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="anisotropy_local_axis" label="Local Axis">
+          <value>2</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="transparency" label="Reflection">
+          <value>
+            <r>1.000000</r>
+            <g>1.000000</g>
+            <b>1.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float texture" name="anisotropy_rotation_tex" label="Rotation Texture"/>
+        <parameter listType="none" handler="default" type="float texture" name="reflectionGlossiness_tex" label="Texture"/>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/Diffuse/color_texture/TexBitmap/buffer/BitmapBuffer" type="bitmap" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="bitmap" name="BitmapBuffer">
+      <parameters>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="color_space" label="Color Space">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="frame_sequence" label="Frame Sequence">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="maya_compatible" label="Maya Compatible">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="frame_offset" label="Frame Offset">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="list" name="psd_alpha_name" label="psd_alpha_name">
+          <value>
+            <list/>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="filter_type" label="Filter Type">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="filter_blur" label="Filter Blur">
+          <value>0.150000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="list" name="psd_group_name" label="psd_group_name">
+          <value>
+            <list/>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="FileBrowserHandler" type="string" name="file" label="File">
+          <value>C:/Documents and Settings/Emil/Desktop/vismat_material_collection/Misc/Carbon Fiber.jpg</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="allow_negative_colors" label="Allow negative colors">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="use_data_window" label="use_data_window">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="frame_number" label="Frame Number">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="gamma" label="Gamma">
+          <value>1.000000</value>
+        </parameter>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/Diffuse/color_texture/TexBitmap/uvwgen/UVWGenChannel" type="uvw" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="uvw" name="UVWGenChannel">
+      <parameters>
+        <parameter listType="none" handler="TextureTransformHandler" type="componentTransform" name="uvw_transform" label="uvw_transform">
+          <value>
+            <componentTransform>
+              <x_rotation>0.000000</x_rotation>
+              <y_rotation>0.000000</y_rotation>
+              <z_rotation>0.000000</z_rotation>
+              <x_scale>1.000000</x_scale>
+              <y_scale>1.000000</y_scale>
+              <z_scale>1.000000</z_scale>
+              <x_mirror>0</x_mirror>
+              <y_mirror>0</y_mirror>
+              <z_mirror>0</z_mirror>
+              <x_offset>0.000000</x_offset>
+              <y_offset>0.000000</y_offset>
+              <z_offset>0.000000</z_offset>
+            </componentTransform>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="crop_u" label="crop_u">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output vector texture" name="uvw_coords" label="uvw_coords"/>
+        <parameter listType="none" handler="default" type="bool" name="use_double_sided_mode" label="Enable double-sided mode">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_mode" label="wrap_mode">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="plugin" name="uvwgen" label="uvwgen">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_u" label="wrap_u">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_w" label="wrap_w">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="wrap_v" label="wrap_v">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="crop_w" label="crop_w">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="uvw_channel" label="Channel">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="vector" name="coverage" label="coverage">
+          <value>
+            <x>1.000000</x>
+            <y>1.000000</y>
+            <z>1.000000</z>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="crop_v" label="crop_v">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="transform" name="tex_transform" label="tex_transform">
+          <value>
+            <vector>
+              <x>1.000000</x>
+              <y>0.000000</y>
+              <z>0.000000</z>
+            </vector>
+            <vector>
+              <x>0.000000</x>
+              <y>1.000000</y>
+              <z>0.000000</z>
+            </vector>
+            <vector>
+              <x>0.000000</x>
+              <y>0.000000</y>
+              <z>1.000000</z>
+            </vector>
+            <vector>
+              <x>0.000000</x>
+              <y>0.000000</y>
+              <z>0.000000</z>
+            </vector>
+          </value>
+        </parameter>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/Diffuse/color_texture/TexBitmap" type="texture" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="texture" name="TexBitmap">
+      <parameters>
+        <parameter listType="none" handler="default" type="float" name="uv_noise_amount" label="Amount">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="jitter" label="Jitter">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="invert_alpha" label="Invert Alpha">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output acolor texture" name="color" label="Color"/>
+        <parameter listType="none" handler="None" type="plugin" name="bitmap" label="Bitmap">
+          <value>/Carbon_Fiber/Diffuse/color_texture/TexBitmap/buffer/BitmapBuffer</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="alpha_from_intensity" label="Alpha From Intensity">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="compatibility_with" label="compatibility with">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="invert" label="Invert">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="plugin" name="uvwgen" label="uvwgen">
+          <value>/Carbon_Fiber/Diffuse/color_texture/TexBitmap/uvwgen/UVWGenChannel</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output float texture" name="out_alpha" label="out_alpha"/>
+        <parameter listType="none" handler="default" type="bool" name="tile" label="Tile">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="uv_noise_size" label="Size">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="CheckBoxHandler" type="integer" name="uv_noise_on" label="On">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="nouvw_color" label="No UVW Color"/>
+        <parameter listType="none" handler="DoubleSpinBoxHandler" type="float texture" name="alpha_offset" label="Alpha Offset">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="un_noise_phase" label="Phase">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="uv_noise_levels" label="Levels">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output acolor texture" name="out_transparency" label="out_transparency"/>
+        <parameter listType="none" handler="DoubleSpinBoxHandler" type="float texture" name="alpha_mult" label="Alpha Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="h" label="Height">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="ComboBoxHandler" type="integer" name="placement_type" label="Placement Type">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="tile_v" label="Tile V">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="tile_u" label="Tile U">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="u" label="U">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="w" label="Width">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="v" label="V">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="color_mult" label="Color Multiplier"/>
+        <parameter listType="none" handler="CheckBoxHandler" type="integer" name="uv_noise_animate" label="Animate">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="output float texture" name="out_intensity" label="out_intensity"/>
+        <parameter listType="none" handler="default" type="acolor texture" name="color_offset" label="Color Offset"/>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber/Diffuse" type="BRDF" layout="" renderer="vray">
+  <plugin>
+    <vrayplugin type="BRDF" name="BRDFDiffuse">
+      <parameters>
+        <parameter gammaCorrect="1" name="color_tex" label="Texture" handler="default" listType="none" type="acolor texture">
+          <value>/Carbon_Fiber/Diffuse/color_texture/TexBitmap</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="use_irradiance_map" label="Use Irradiance Map">
+          <value>1</value>
+        </parameter>
+        <parameter gammaCorrect="1" name="color" label="Color" handler="default" listType="none" type="color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="use_color_tex_alpha_as_transparency" label="Use color texture as transparency">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="color_tex_mult" label="Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float texture" name="roughness" label="Roughness"/>
+        <parameter listType="none" handler="default" type="float" name="transparency_tex_mult" label="Transp. Texture Multiplier">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="transparency" label="Transparency">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="transparency_tex" label="Transp. Texture"/>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+<Asset url="/Carbon_Fiber" type="material" layout="defvrmat" renderer="vray">
+  <plugin>
+    <vrayplugin type="material" name="MtlASGVIS">
+      <parameters>
+        <parameter listType="none" handler="default" type="bool" name="displace_continuity" label="Keep continuity">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="refract_tex_mult" label="refract_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="TextureHandler" type="plugin" name="displace_tex" label="displace_tex">
+          <value></value>
+        </parameter>
+        <parameter name="trace_depth_dummy" label="Refraction Max Depth" handler="default" listType="none" isUserData="1" type="integer">
+          <value>-1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="alpha" label="Alpha Contribution">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="displace_view_dependent" label="View dependent">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="cast_shadow" label="Cast Shadows">
+          <value>1</value>
+        </parameter>
+        <parameter name="effected_by_mtl_override" label="Can be Overridden" handler="default" listType="none" isUserData="1" type="bool">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="displace_water_level" label="Water Level">
+          <value>0.000000</value>
+        </parameter>
+        <parameter name="trace_reflections_dummy" label="Trace Reflections" handler="default" listType="none" isUserData="1" type="bool">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="gi_tex_mult" label="gi_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="displace_tex_mult" label="displace_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="displace_edge_length" label="Edge length">
+          <value>4.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="displace_use_globals" label="Use globals">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="TextureHandler" type="plugin" name="gi_tex" label="gi_tex">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="refract_color" label="refract_color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="override_refract" label="Refraction">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="override_reflect" label="Reflection">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="override_gi" label="GI">
+          <value>0</value>
+        </parameter>
+        <parameter name="reflect_on_backside_dummy" label="Reflect on Backside" handler="default" listType="none" isUserData="1" type="bool">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="override_bg" label="Background">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="only_visible_in_secondary" label="Only in Secondary">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="gi_color" label="gi_color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="reflect_color" label="reflect_color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="alpha_tex_mult" label="alpha_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="TextureHandler" type="plugin" name="bump_tex" label="bump_tex">
+          <value>/Carbon_Fiber/bump_tex/TexBitmap</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="bg_color" label="bg_color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="TextureHandler" type="plugin" name="reflect_tex" label="reflect_tex">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="ignore_objects" label="On">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="bump_shadows" label="bump_shadows">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="TextureHandler" type="plugin" name="refract_tex" label="refract_tex">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="double_sided" label="Double-Sided">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="reflect_tex_mult" label="reflect_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter name="trace_refractions_dummy" label="Trace Refractions" handler="default" listType="none" isUserData="1" type="bool">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="bump_tex_mult" label="bump_tex_mult">
+          <value>0.030000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="color" name="material_id_color" label="ID Color">
+          <value>
+            <r>0.000000</r>
+            <g>0.000000</g>
+            <b>0.000000</b>
+          </value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="displace_shift" label="Shift">
+          <value>0.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="disable_volume_fog" label="Disable Volume Fog">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="short_circuit" label="Optimize exclusion">
+          <value>0</value>
+        </parameter>
+        <parameter listType="none" handler="TextureHandler" type="plugin" name="bg_tex" label="bg_tex">
+          <value></value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="bump_on" label="Bump">
+          <value>1</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="integer" name="displace_max_subdivs" label="Max subdivs">
+          <value>256</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="float" name="bg_tex_mult" label="bg_tex_mult">
+          <value>1.000000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="bool" name="displace_on" label="Displacement">
+          <value>0</value>
+        </parameter>
+        <parameter listType="plugin" handler="default" type="list" name="brdfs" label="brdfs">
+          <value>
+            <list>
+              <entry>/Carbon_Fiber/Reflection</entry>
+              <entry>/Carbon_Fiber/Diffuse</entry>
+            </list>
+          </value>
+        </parameter>
+        <parameter name="cutoff_dummy" label="Cutoff" handler="default" listType="none" isUserData="1" type="float">
+          <value>0.001000</value>
+        </parameter>
+        <parameter listType="none" handler="default" type="acolor texture" name="alpha_tex" label="alpha_tex"/>
+      </parameters>
+    </vrayplugin>
+  </plugin>
+</Asset>
+</vismat>
